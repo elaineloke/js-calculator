@@ -2,9 +2,9 @@
 
 //Add constructor to take all the inputs and functions of calculator
 class Calculator {
-    constructor(previousOperantTextElement, currentOperantTextElement) {
-        this.previousOperantTextElement = previousOperantTextElement
-        this.currentOperantTextElement = currentOperantTextElement
+    constructor(previousOperandTextElement, currentOperandTextElement) {
+        this.previousOperadtTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currentOperandTextElement
         this.clear()
     }
 
@@ -40,7 +40,7 @@ const operationButtons = document.querySelectorAll('[data-operation]')
 const equalsButtons = document.querySelector('[data-equals]')
 const deleteButtons = document.querySelector('[data-delete]')
 const allClearButtons = document.querySelector('[data-all-clear]')
-const previousOperantTextElement = document.querySelector('[data-previous-operand]')
-const currentOperantTextElement = document.querySelector('[data-current-operand]')
+const previousOperandTextElement = document.querySelector('[data-previous-operand]')
+const currentOperandTextElement = document.querySelector('[data-current-operand]')
 
 // How to store previous and current inputs > use a class
