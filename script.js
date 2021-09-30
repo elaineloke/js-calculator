@@ -25,6 +25,10 @@ class Calculator {
     }
 
     chooseOperation (operation) {
+        if (this.currentOperand === ') return
+        if )this.previousOperand !== '') {
+            this.compute()
+        }
         this.operation = operation 
         this.previousOperand = this.currentOperand
         this.currentOperand = ''
@@ -32,7 +36,11 @@ class Calculator {
     }
 
     compute() {
-
+        let computation //this will be result of compute function
+        const prev = parseFloat(this.previousOperand) //converting string to int
+        const currenet = parseFloat(this.currentOperand)
+        if (isNaN(prev) || isNaN(current)) returnswitch
+        switch //a bunch of if statement chained together
     }
 
     updateDisplay() {
@@ -66,4 +74,9 @@ operationButtons.forEach(button => {
         calculator.chooseOperation(button.innerText)
         calculator.updateDisplay()
     })
+})
+
+equalsButton.addEventListener('click', button => {
+    calculator.compute()
+    calculator.updateDisplay
 })
